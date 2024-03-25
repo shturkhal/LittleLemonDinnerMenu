@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct Ingredient: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Ingredient()
+enum Ingredient: String, CaseIterable {
+    case spinach = "Spinach"
+    case broccoli = "Broccoli"
+    case carrot = "Carrot"
+    case pasta = "Pasta"
+    case tomatoSauce = "Tomato sauce"
+    case non = "empty description"
 }

@@ -7,22 +7,6 @@
 
 import SwiftUI
 
-
-enum MenuCategory: String, CaseIterable {
-    case food = "Food"
-    case dessert = "Dessert"
-    case drink = "Drink"
-}
-
-enum Ingredient: String, CaseIterable {
-    case pasta = "Pasta"
-    case carrot = "Carrot"
-    case spinach = "Spinach"
-    case tomatoSauce = "Tomato sauce"
-    case broccoli = "Broccoli"
-    
-}
-
 enum SortedBy: String, CaseIterable {
     case mostPopular = "Most popular"
     case fromLowPrice = "Price $-$$$"

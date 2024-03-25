@@ -14,7 +14,7 @@ class MenuViewViewModel: ObservableObject {
     @Published var isShowingDesserts = true
     @Published var isShowingFood = true
     @Published var sortedBy = SortedBy.fromAtoZ
-   /// 12 items
+   /// 12 items for food
     @Published var foods: [MenuItem] = [
         MenuItem(price: 11.00, title: "Food #1", menuCategory: .food, ordersCount: 01, ingredient: [.broccoli,.carrot,.pasta,.spinach,.tomatoSauce]),
         MenuItem(price: 12.00, title: "Food #2", menuCategory: .food, ordersCount: 02, ingredient: [.broccoli,.carrot,.pasta,.spinach]),
@@ -64,23 +64,5 @@ class MenuViewViewModel: ObservableObject {
             drinks.sort() { $0.title > $1.title }
             desserts.sort() { $0.title > $1.title }
         }
-        
     }
-    
-    
-    
-    
-//    func sortedByTitle(lhs: MenuItem, rhs: MenuItem) -> Bool {
-//        let lhsTitle = lhs.title.split(separator: " ")
-//        let rhsTitle = rhs.title.split(separator: " ")
-//        
-//        let lhsNumber = Int(lhsTitle[lhsTitle.count - 1]) ?? 0
-//        let rhsNumber = Int(rhsTitle[rhsTitle.count - 1]) ?? 0
-//        
-//        if lhsNumber != rhsNumber {
-//            return lhsNumber < rhsNumber
-//        } else {
-//            return lhs.title < rhs.title
-//        }
-//    }
 }

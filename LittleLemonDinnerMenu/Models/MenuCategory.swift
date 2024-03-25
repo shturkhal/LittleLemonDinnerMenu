@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-struct MenuCategory: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    MenuCategory()
+enum MenuCategory: String, CaseIterable {
+    case food = "Food"
+    case drink = "Drink"
+    case dessert = "Dessert"
 }
